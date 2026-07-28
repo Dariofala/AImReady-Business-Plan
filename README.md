@@ -1,5 +1,4 @@
 # AImReady
-> **Turning exam-day panic into practiced confidence.**
 
 AImReady is an AI-powered virtual exam panel designed to help university students overcome oral-exam anxiety through immersive, objective, and repeatable practice sessions. 
 
