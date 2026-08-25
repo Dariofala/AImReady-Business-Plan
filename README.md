@@ -14,29 +14,6 @@ AImReady simulates a real university exam panel using a sophisticated Multi-Agen
 
 ---
 
-## System Architecture
-The core of AImReady relies on a localized, privacy-first data architecture. The system operates in two main phases:
-
-### 1. Live Exam Phase
-* **Student Input:** Users upload their own course material. The browser captures audio and video via webcam/mic.
-* **Multimodal Processing:** Utilizes **Whisper** for accurate speech-to-text recognition and edge-based vision frameworks (like MediaPipe/TensorFlow.js) to process facial expressions client-side, ensuring raw biometric data never leaves the device.
-* **Multi-Agent Engine (Live):**
-  * **Lead Examiner (GPT-4o-mini):** Asks the main subject-matter questions in a structured way.
-  * **Assistant Examiner (Llama 3.1 8B):** Fast-paced agent that jumps in with direct follow-up questions to simulate pressure.
-  * **Silent Coordinator (Claude Haiku):** Reads transcripts and delivery metrics to apply pacing rules and coordinate the two speaking agents without ever addressing the student directly.
-
-### 2. Post-Exam Phase
-* **Evaluation Panel (Async):** The LLMs reread the transcript to evaluate content accuracy and clarity.
-* **Final Report:** Generates a comprehensive breakdown of the student's communicative performance, offering actionable suggestions to improve delivery and non-verbal signals.
-
----
-
-## Defensibility & Compliance
-AImReady is designed with strict adherence to the **EU AI Act**. By keeping all video processing on the edge and limiting the output to behavioral feedback (without inferring emotional states or providing certifying grades), the system operates safely within the role-play and training simulation exemptions.
-Our FTO (Freedom to Operate) analysis confirms that the European market is unobstructed by current 3D-simulation patents, allowing us to build a strong data moat through strategic B2B institutional licenses.
-
----
-
 ## The Team
 This project was collaboratively designed and developed by:
 * **Dario Falaschi**
